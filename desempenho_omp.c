@@ -2,7 +2,7 @@
 #include <omp.h>
 
 #define NUM_FILOSOFOS 5
-#define ROUNDS 20000000  // Cada filósofo fará 20 milhões de iterações (100 milhões no total)
+#define ROUNDS 100000000 / NUM_FILOSOFOS // Cada filósofo fará 20 milhões de iterações (100 milhões no total)
 
 int main() {
     int garfos[NUM_FILOSOFOS] = {0};  // 0 significa que o garfo está disponível
